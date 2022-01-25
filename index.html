@@ -5,58 +5,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pets</title>
-</head>
+    <title> Pets</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet"
+    </head>
 <body>
-    <header>
-        <h1>Pets</h1>
-        <h2>Childhood Pets</h2>
-    </header>
-    <main>
-        <figure> 
-            <img src="https://media.istockphoto.com/photos/curious-kitten-looking-at-the-camera-picture-id1270023880?b=1&k=20&m=1270023880&s=170667a&w=0&h=7tAE4L2d7qJ4k1OMydwof1kObkG6TuNkDj2n2QC88ic="> 
-            <figcaption>Cats</figcaption> 
-          </figure> 
-          <figure> 
-            <img src="https://media.istockphoto.com/photos/golden-retriever-in-the-field-with-yellow-flowers-picture-id1248529734?b=1&k=20&m=1248529734&s=170667a&w=0&h=Bl9Cgctw_ABsPBr0ue72e5GCtuAtQYPWmFi-HAa0J_s="/> 
-            <figcaption>Dogs</figcaption> 
-          </figure> 
-          <figure> 
-            <img src="https://media.istockphoto.com/photos/smilling-turtle-portrait-picture-id1176850051?b=1&k=20&m=1176850051&s=170667a&w=0&h=EM2lFIkFs6H2E6mfDVMEWf9tps7a3upgK4qblmrlxqY="/>
-            <figcaption>Turtels</figcaption> 
-          </figure> 
-         
-<table>
-  <thead>
-    <tr>
-      <th>Active Pets</th>
-      <th>Quiet Pets</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Dogs</td>
-      <td>Cats</td>
-    </tr>
-  </tbody>
   
-</table>
-<section forms>
-    <p>Please enter your email to subscribe to our page.</p>
-    <form method="post">
-        <label>Email:
-          <input email="submitted-email" autocomplete="email">
-        </label>
-        <button>Save</button>
-      </form>
-    
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <!-- <a class="nav-link" href="#">Contact Us</a> -->
+              </li>
+                  </ul>
+            <span class="navbar-text">
+             
+            </span>
+          </div>
+        </div>
+      </nav>
+      
+        <h1>Pets Are The Best</h1>
+  </header>
+    <main>
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://media.istockphoto.com/photos/curious-kitten-looking-at-the-camera-picture-id1270023880?b=1&k=20&m=1270023880&s=170667a&w=0&h=7tAE4L2d7qJ4k1OMydwof1kObkG6TuNkDj2n2QC88ic=" class="d-block w-100" alt="Cats">
+          </div>
+          <div class="carousel-item">
+            <img src="https://media.istockphoto.com/photos/golden-retriever-in-the-field-with-yellow-flowers-picture-id1248529734?b=1&k=20&m=1248529734&s=170667a&w=0&h=Bl9Cgctw_ABsPBr0ue72e5GCtuAtQYPWmFi-HAa0J_s=" class="d-block w-100" alt="Dogs">
+          </div>
+          <div class="carousel-item">
+            <img src="https://media.istockphoto.com/photos/smilling-turtle-portrait-picture-id1176850051?b=1&k=20&m=1176850051&s=170667a&w=0&h=EM2lFIkFs6H2E6mfDVMEWf9tps7a3upgK4qblmrlxqY=" class="d-block w-100" alt="Turtles">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+                 
+     <section forms>
+  <p class="Letters"><strong>Send us a picture of your pets to have them featured on our website.</strong></p>
+  <div class="mb-3">
+    <label for="formFile" class="form-label"></label>
+    <input class="form-control" type="file" id="formFile">
+  </div>
+       
 
 
 </section>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
         
 </body>
 <footer>
-    <p>Created by Terry and Ivette</p>
+  <p>Designed with <span>&#9829</span> by Terry</p>
 </footer>
 </html>
